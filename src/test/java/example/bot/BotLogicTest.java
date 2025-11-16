@@ -203,7 +203,7 @@ public class BotLogicTest {
     }
 
     /**
-     * Протестировать команду остановки, когда не началось тестирование
+     * Протестировать команду остановки во время уведомления
      */
     @Test
     public void testCommandStopWhenNotify() {
