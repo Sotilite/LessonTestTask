@@ -5,7 +5,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
- * Тестирует контейнер
+ * Тестирует контейнер.
+ * Не тестирую остальные метода, поскольку они
+ * протестированы в методах добавления и удаления
  */
 public class ContainerTest {
     /**
@@ -57,7 +59,4 @@ public class ContainerTest {
         Assertions.assertFalse(container.contains(item));
         Assertions.assertFalse(container.remove(item));
     }
-
-    //Не тестирую остальные метода класса Container,
-    //поскольку они протестированы в методах добавления и удаления
 }

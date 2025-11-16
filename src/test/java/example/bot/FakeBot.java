@@ -3,7 +3,7 @@ package example.bot;
 /**
  * Фейковый консольный бот, предназначенный для тестирования логики
  */
-public class FakeConsoleBot implements Bot {
+public class FakeBot implements Bot {
     /**
      * Хранит предыдущее отправленное сообщение пользователю
      */

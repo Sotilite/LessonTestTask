@@ -5,7 +5,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
- * Тестирует логику по работе с заметками
+ * Тестирует логику по работе с заметками.
+ * Не тестирую команду "/notes", поскольку она тестируется
+ * в методах добавления, редактирования и удаления
  */
 public class NoteLogicTest {
     /**
@@ -69,9 +71,11 @@ public class NoteLogicTest {
         );
     }
 
-    //Не тестирую команду "/notes", поскольку она тестируется
-    //в методах добавления, редактирования и удаления
-
-    //Не тестирую не известную команду, поскольку тест
-    //всегда будет проходить, если команда не распознана
+    @Test
+    public void unknownCommandTest() {
+        Assertions.assertEquals(
+                "Unknown command",
+                logic.handleMessage("/insert")
+        );
+    }
 }
